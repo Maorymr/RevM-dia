@@ -1,0 +1,135 @@
+.header {
+  background-color: black;
+  color: aliceblue;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between; /* Espace entre la gauche et la droite */
+  align-items: center;
+  padding: 0 20px; /* Espacement interne pour les côtés */
+}
+
+.left {
+  flex: 1; /* Le bouton Accueil occupe l'espace à gauche */
+}
+
+.right {
+  display: flex;
+  gap: 10px; /* Espacement entre les boutons à droite */
+}
+
+.button {
+  background-color: #fff;
+  border: 2px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  color: #0f1111;
+  cursor: pointer;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  padding: 5px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100px;
+  
+}
+
+.buttons {
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  color: #0f1111;
+  cursor: pointer;
+  font-family: "Amazon Ember", sans-serif;
+  font-size: 13px;
+  padding: 5px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+}
+
+
+
+.button:hover {
+  background-color: #f7fafa;
+}
+
+.button:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center; /* Centre la barre de recherche horizontalement */
+  width: 100%; /* Prend toute la largeur disponible */
+  margin: 0; /* Enlève tout espacement autour de la barre de recherche */
+}
+
+.main {
+  display: flex;
+  flex-direction: row; /* Aligne les sections sur une ligne */
+  align-items: flex-start; /* Aligne le contenu en haut */
+  gap: 20px; /* Espacement entre les sections */
+  padding: 20px; /* Pour ajouter un peu de marge autour du contenu */
+}
+
+.leftContent {
+  flex: 1; /* Prend tout l'espace disponible à gauche */
+}
+
+.rightContent {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; /* Centre le contenu horizontalement dans la colonne */
+  gap: 20px; 
+}
+
+.caroussel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  height: 150px; 
+  width: 100%; 
+}
+
+.h1 {
+  background-color: rgba(0, 0, 0, 0.282);
+  color: white;
+  height: 50vw;
+  width: 200px;
+}
+
+.parent {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 150px;
+  width: 100%; 
+  gap: 20px;
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #0070f3;
+  height: 100px;
+  width: 300px;
+}
+
+
+
+
+
+
+
+
+
