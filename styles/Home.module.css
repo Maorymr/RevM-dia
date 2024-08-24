@@ -72,6 +72,7 @@
 }
 
 .main {
+  background-color: #d5d9d9;
   display: flex;
   flex-direction: row; /* Aligne les sections sur une ligne */
   align-items: flex-start; /* Aligne le contenu en haut */
@@ -91,6 +92,7 @@
 }
 
 .caroussel {
+  background-color: #d5d9d9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,19 +113,137 @@
   justify-content: center; 
   align-items: center; 
   height: 150px;
-  width: 100%; 
+  width: 1000px; 
   gap: 20px;
 }
 
 .article {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Empile verticalement l'image et le prix */
+  justify-content: center;
+  align-items: center; /* Centre horizontalement l'image et le prix */
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+}
+
+.imgContainer {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; /* Centre l'image horizontalement */
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+
+/* Conteneur principal du carrousel */
+.carousel {
+  position: relative;
+  width: auto;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Conteneur interne pour aligner les images */
+.carouselInner {
+  display: flex; /* Utilise Flexbox pour aligner les images horizontalement */
+  transition: transform 0.5s ease; /* Transition fluide pour les défilements */
+}
+
+/* Chaque élément du carrousel */
+.carouselItem {
+  min-width: 100%; /* Chaque image occupe tout l'espace de l'affichage */
+  flex: 0 0 auto; /* Empêche les images de se réduire */
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  background-color: #0070f3;
-  height: 100px;
-  width: 300px;
 }
+
+/* Styles pour les images */
+.img {
+  height: 70px;
+  width: 90px;
+  object-fit: cover; /* Pour que les images soient coupées de manière uniforme */
+}
+
+/* Boutons de contrôle du carrousel */
+.carouselControlPrev,
+.carouselControlNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carouselControlPrev {
+  left: 10px;
+}
+
+.carouselControlNext {
+  right: 10px;
+}
+
+
+.price {
+  margin-top: 10px; /* Ajoute un espace entre l'image et le prix */
+}
+
+.daddy{
+  flex-direction: row;
+}
+.productPage {
+  padding: 20px;
+}
+
+.productPage h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.productPage p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.productPage button {
+  background-color: #4CAF50; /* Vert */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.productPage ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.productPage ul li {
+  margin-bottom: 10px;
+}
+
+.productPage ul li a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.productPage ul li a:hover {
+  text-decoration: underline;
+}
+
+
 
 
 

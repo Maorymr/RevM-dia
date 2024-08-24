@@ -7,7 +7,7 @@ function Header() {
       <div className={styles.left}>
         
         <Link href="/">
-          <a className={styles.buttons}><img src='/img.png'></img></a>
+          <a className={styles.img}><img src='/img.png'></img></a>
         </Link>
       </div>
       <div className={styles.right}>
